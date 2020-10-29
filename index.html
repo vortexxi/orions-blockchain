@@ -146,6 +146,11 @@ a:active{
     text-align: center;
     min-width: 100%
 }
+@media only screen and (max-width: 721px) {
+    #verticalTabs{
+        display: none;
+    }
+}
 
     </style>
 
@@ -155,7 +160,7 @@ a:active{
 
 </head>
 <body>
-    <div class="container-fluid" style="position: absolute; z-index: 10; padding:0; margin:0;">
+    <div id="verticalTabs" class="container-fluid" style="position: absolute; z-index: 10; padding:0; margin:0;">
        <div class="row" style="margin:15px; padding:15px;">
           <div class="col-3">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -167,7 +172,7 @@ a:active{
         </div>
           <div class="col-9">
             <div class="tab-content" id="v-pills-tabContent">
-              <div class="tab-pane fade show active tabParagraph" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">LOGO</div>
+              <div class="tab-pane fade show active tabParagraph" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"><h1>LOGO</h1></div>
               <div class="tab-pane fade tabParagraph tabBox" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Corrupti, similique consequuntur aut. Officia deserunt minima illum magnam, tempore nam, voluptatum pariatur delectus beatae perspiciatis neque distinctio temporibus fugiat perferendis accusantium.</div>
               <div class="tab-pane fade tabParagraph tabBox" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempora asperiores natus rem excepturi corrupti ad fugit eum expedita, consequuntur, pariatur ipsam laboriosam ipsum sunt reiciendis sint nam omnis unde.</div>
               <div class="tab-pane fade tabParagraph tabBox" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Vitae minus consequatur sed, culpa ut vel, quod ipsum mollitia reiciendis natus! Est sit animi commodi sint, ratione consequatur, odit autem dolorem?</div>
