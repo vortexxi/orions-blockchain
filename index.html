@@ -17,6 +17,9 @@
       <!-- FONTS-->
       <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
       <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
    <!--  <link rel="stylesheet" href="./css/materialdesignicons.min.css">
     <link rel="stylesheet" href="./css/flag-icon.min.css"> -->
 
@@ -123,10 +126,24 @@ a:active{
     color:#FFFFFF;
     /*font-family: 'Space Mono', monospace;*/
     font-family: 'MuseoModerno', cursive;
+    text-align: center;
+}
+.bigLogo{
+
 }
 .tabBox{
     background: rgb(0, 0, 0, 0.5);
     padding: 15px;
+    font-family: 'MuseoModerno', cursive;
+    font-weight: 100;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-align: justify;
+
+}
+.smallTabBox{
+    background: rgb(0, 0, 0, 0.5);
+    padding: 10px;
     font-family: 'MuseoModerno', cursive;
     font-weight: 100;
     line-height: 1.6;
@@ -152,7 +169,13 @@ a:active{
     }
 }
 
+@media only screen and (min-width: 722px){
+    .smallScreen{
+        display: none !important;
+    }
+}
     </style>
+
 
 
 
@@ -172,21 +195,128 @@ a:active{
         </div>
           <div class="col-9">
             <div class="tab-content" id="v-pills-tabContent">
-              <div class="tab-pane fade show active tabParagraph" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"><h1>LOGO</h1></div>
-              <div class="tab-pane fade tabParagraph tabBox" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Corrupti, similique consequuntur aut. Officia deserunt minima illum magnam, tempore nam, voluptatum pariatur delectus beatae perspiciatis neque distinctio temporibus fugiat perferendis accusantium.</div>
-              <div class="tab-pane fade tabParagraph tabBox" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempora asperiores natus rem excepturi corrupti ad fugit eum expedita, consequuntur, pariatur ipsam laboriosam ipsum sunt reiciendis sint nam omnis unde.</div>
-              <div class="tab-pane fade tabParagraph tabBox" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Vitae minus consequatur sed, culpa ut vel, quod ipsum mollitia reiciendis natus! Est sit animi commodi sint, ratione consequatur, odit autem dolorem?</div>
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" style="background-color: transparent; text-align: center; color: #FFFFFF"><span style="font-family: 'Orbitron', sans-serif; justify-content: center; text-align: center; font-size: 70px; display: block;">ORIONS</span><div style="display: block; font-family: 'Orbitron', sans-serif; text-transform: uppercase; letter-spacing: 3px;">Cryptocurrency economy</div></div>
+              <div class="tab-pane fade tabParagraph tabBox" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Orions is a cryptocurrency that works as a medium of exchange in the economy of the same name. Its objective is to facilitate and promote exchanges of goods and services for a small community of highly qualified members in their respective areas of expertise and knowledge.</div>
+              <div class="tab-pane fade tabParagraph tabBox" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Orions token works on Etherum's ECR-20 network and only 100,000 were minted on the Fuse.io platform on 10/21/2020 while the Orionids could be observed in the sky. We invite you to join our economy and help us discover the experience of giving life to an economy, click on our invitation link, the first 100 members will receive 100 ORIONS tokens:<br>Fuse Studio allows creating a wallet and minting custom branded cryptocurrencies for a business / community, integrating digital and fiat currencies.</div>
+              <div class="tab-pane fade tabParagraph tabBox" style="justify-content: center;" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+<form style="justify-content: center;">
+  <div class="form-row" style="justify-content: center;">
+        <div class="col-md-6 mb-3">
+              <label for="validationServer01">Name</label>
+              <input type="text" class="form-control" id="validationServer01" required>
+              <!-- <div class="valid-feedback">
+                Looks good!
+              </div> -->
+        </div>
+  </div>
+
+  <div class="form-row" style="justify-content: center;">
+        <div class="col-md-6 mb-3">
+            <label for="inputEmail3">Email</label> 
+              <input type="email" class="form-control" id="inputEmail3" placeholder="example@mail.com" required>
+        </div>
+  </div>
+
+  <div class="form-row" style="justify-content: center;">
+      <div class="col-md-6 mb-3">
+            <div class="mb-3">
+                <label for="validationTextarea">Textarea</label>
+                <textarea class="form-control" id="validationTextarea" placeholder="Message" required></textarea>
+               <!--  <div class="invalid-feedback">
+                  Please enter a message in the textarea.
+                </div> -->
+            </div>
+        </div>
+  </div>
+  <div class="form-row" style="justify-content: center;">
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</div>
+</form>
+              </div>
             </div><!--content-->
           </div><!--col-->
         </div><!--row-->
     </div><!--container-->
 
-    <div class="d-flex justify-content-center align-items-end bottomBar">
+    <!--    MENU PANTALLAS CHICAS   -->
+   <!--  <div id="smallScreen" class="fixed-top">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Collapsed content</h5>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div> -->
+<div  class="container-fluid smallScreen" style="position: absolute; z-index: 10; padding:0; margin:0; display: flex;
+justify-content: space-evenly;">
+<ul class="nav nav-pills mb-3 mt-3"  id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="mdi mdi-space-station"></i></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="mdi mdi-space-invaders"></i></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="pills-crypto-tab" data-toggle="pill" href="#pills-crypto" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="mdi mdi-currency-usd-circle-outline"></i></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="mdi mdi-transit-connection-horizontal"></i></a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent" style="z-index: 10; color: #FFFFFF; position: fixed; margin-top: 75px; margin-left: 10px; margin-right: 10px;">
+      <div class="tab-pane fade show active" style="background-color: transparent" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><span style="font-family: 'Orbitron', sans-serif; justify-content: center; text-align: center; font-size: 30px; display: block;">ORIONS</span><div style="display: block; font-family: 'Orbitron', sans-serif; text-transform: uppercase; letter-spacing: 3px;">Cryptocurrency economy</div></div>
+      <div class="tab-pane fade smallTabBox" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><h4>ABOUT</h4>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Corrupti, similique consequuntur aut. Officia deserunt minima illum magnam, tempore nam, voluptatum pariatur delectus beatae perspiciatis neque distinctio temporibus fugiat perferendis accusantium.</div>
+      <div class="tab-pane fade smallTabBox" id="pills-crypto" role="tabpanel" aria-labelledby="pills-crypto-tab"><h4>OUR CRYPTOCURRENCY</h4>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Vitae minus consequatur sed, culpa ut vel, quod ipsum mollitia reiciendis natus! Est sit animi commodi sint, ratione consequatur, odit autem dolorem?</div>
+      <div class="tab-pane fade smallTabBox" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"><h4>CONTACT</h4>
+        <form style="justify-content: center;">
+  <div class="form-row" style="justify-content: center;">
+        <div class="col-md-6 mb-3">
+              <label for="validationServer01">Name</label>
+              <input type="text" class="form-control" id="validationServer01" required>
+              <!-- <div class="valid-feedback">
+                Looks good!
+              </div> -->
+        </div>
+  </div>
 
-      <div>
-        <span class="text-muted" style="font-size: 12px">SOME CONTENT HERE</span>
-     </div>
-   
+  <div class="form-row" style="justify-content: center;">
+        <div class="col-md-6 mb-3">
+            <label for="inputEmail3">Email</label> 
+              <input type="email" class="form-control" id="inputEmail3" placeholder="example@mail.com" required>
+        </div>
+  </div>
+
+  <div class="form-row" style="justify-content: center;">
+      <div class="col-md-6 mb-3">
+            <div class="mb-3">
+                <label for="validationTextarea">Textarea</label>
+                <textarea class="form-control" id="validationTextarea" placeholder="Message" required></textarea>
+               <!--  <div class="invalid-feedback">
+                  Please enter a message in the textarea.
+                </div> -->
+            </div>
+        </div>
+  </div>
+  <div class="form-row" style="justify-content: center;">
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</div>
+</form>
+      </div>
+</div>
+</div><!--CONTAINER-->
+
+
+
+    <div class="d-flex justify-content-center align-items-end bottomBar">
+          <div>
+            <span class="text-muted" style="font-size: 12px">SOME CONTENT HERE</span>
+            <a href="https://studio.fuse.io/view/community/0x5554e9eed5ec9077FeaA19B878c06Bf624A4b3b5">GO TO FUSE STUDIO</a>
+         </div>
     </div>
 
     <script src="__start__.js"></script>
