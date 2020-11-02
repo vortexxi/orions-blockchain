@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="img/orions-crypto.ico" />
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
@@ -22,6 +25,21 @@
       <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
    <!--  <link rel="stylesheet" href="./css/materialdesignicons.min.css">
     <link rel="stylesheet" href="./css/flag-icon.min.css"> -->
+    <!-- Twitter -->
+        <meta name="twitter:site" content="">
+        <meta name="twitter:title" content="ORIONS cryptocurrency economy">
+        <meta name="twitter:description" content="Cryptoeconomy runing om fuse.io ecosistem">
+        <meta name="twitter:image:src" content="http://github.com/vortexxi/orions-blockchain/tree/vertical-menu/img/orions-cryptocurrency.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="">
+        <meta name="twitter:title" content="ORIONS cryptocurrency economy">
+        <meta property="og:description" content="Cryptoeconomy runing om fuse.io ecosistem">
+        <meta property="og:site_name" content="Orions">
+        <meta property="og:image" content="http://github.com/vortexxi/orions-blockchain/tree/vertical-menu/img/orions-cryptocurrency.png">
+        <meta property="og:type" content="website">
+
+
 
     <link rel="manifest" href="manifest.json">
     <style></style>
@@ -144,7 +162,7 @@ a:active{
 .smallTabBox{
     background: rgb(0, 0, 0, 0.5);
     padding: 10px;
-    font-family: 'MuseoModerno', cursive;
+    font-family: 'MuseoModerno', cursive !important;
     font-weight: 100;
     line-height: 1.6;
     letter-spacing: 1px;
@@ -163,10 +181,20 @@ a:active{
     text-align: center;
     min-width: 100%
 }
+.fuseLinks{
+   color: #d52074 !important;
+}
+.fuseLinks:hover{
+    color:#48629f !important;
+}
 @media only screen and (max-width: 721px) {
     #verticalTabs{
         display: none;
     }
+    i {
+    margin-right: 5px;
+    margin-left: 5px;
+}
 }
 
 @media only screen and (min-width: 722px){
@@ -177,10 +205,6 @@ a:active{
     </style>
 
 
-
-
-
-
 </head>
 <body>
     <div id="verticalTabs" class="container-fluid" style="position: absolute; z-index: 10; padding:0; margin:0;">
@@ -188,32 +212,35 @@ a:active{
           <div class="col-3">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
               <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="mdi mdi-space-station"></i><span class="menuText">Home</span></a>
-              <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="mdi mdi-space-invaders"></i><span class="menuText">About</span></a>
-              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="mdi mdi-currency-usd-circle-outline"></i><span class="menuText">Cryptocurrency</span></a>
+              <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="mdi mdi-currency-usd-circle-outline"></i><span class="menuText">About Orions</span></a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="mdi mdi-space-invaders"></i><span class="menuText">Ecosystem</span></a>
               <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="mdi mdi-transit-connection-horizontal"></i><span class="menuText">Contact</span></a>
             </div><!--col-->
         </div>
           <div class="col-9">
             <div class="tab-content" id="v-pills-tabContent">
               <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" style="background-color: transparent; text-align: center; color: #FFFFFF"><span style="font-family: 'Orbitron', sans-serif; justify-content: center; text-align: center; font-size: 70px; display: block;">ORIONS</span><div style="display: block; font-family: 'Orbitron', sans-serif; text-transform: uppercase; letter-spacing: 3px;">Cryptocurrency economy</div></div>
-              <div class="tab-pane fade tabParagraph tabBox" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Orions is a cryptocurrency that works as a medium of exchange in the economy of the same name. Its objective is to facilitate and promote exchanges of goods and services for a small community of highly qualified members in their respective areas of expertise and knowledge.</div>
-              <div class="tab-pane fade tabParagraph tabBox" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Orions token works on Etherum's ECR-20 network and only 100,000 were minted on the Fuse.io platform on 10/21/2020 while the Orionids could be observed in the sky. We invite you to join our economy and help us discover the experience of giving life to an economy, click on our invitation link, the first 100 members will receive 100 ORIONS tokens:<br>Fuse Studio allows creating a wallet and minting custom branded cryptocurrencies for a business / community, integrating digital and fiat currencies.</div>
+              <div class="tab-pane fade tabParagraph tabBox" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"><a href="https://studio.fuse.io/view/community/0x5554e9eed5ec9077FeaA19B878c06Bf624A4b3b5" target="_blank"><span class="fuseLinks">Orions</span></a> is a cryptocurrency launched on October 21, 2020, while the Orionids could be observed in the sky. Now it works on the Etherum Ropsten network to develop and make test exchanges and once this stage is completed start working on the Etherum ECR-20 network. There is just a single unique mintage of 100,000 orions.<br><br>There are many "shitcoins" designed just to take away your bitcoins, <a href="https://studio.fuse.io/view/community/0x5554e9eed5ec9077FeaA19B878c06Bf624A4b3b5" target="_blank"><span class="fuseLinks">Orions</span></a> does not have that objective, its objective is simple: to form a select community that exchanges goods and services and add -to its capacity- dynamism to the current resistant trend... just that. <a target="_blank" href="https://studio.fuse.io/view/community/0x5554e9eed5ec9077FeaA19B878c06Bf624A4b3b5"><span class="fuseLinks">Go to the Orions economy page here</span></a>.
+Download the <a href="https://fuse.io/" target="_blank"><span class="fuseLinks">fuse wallet</span></a> and get 100 orions (the first 100 people) and help us generate an alternative economy.</div>
+              <div class="tab-pane fade tabParagraph tabBox" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">The Fuse.io ecosystem offers a powerful platform that integrates both  cryptocurrencies and fiat currency in one wallet. An innovative quality is the possibility of being able to mint personalized cryptocurrencies and integrate many users to exchange goods and services and generate alternative economies. A very successful recent example case developed in fuse.io is <a href="https://www.gooddollar.org/" target="_blank"><span class="fuseLinks">gooddollar.org</span></a>, just officially launched in September 2020, there is already a world community exchanging goods and services.</div>
               <div class="tab-pane fade tabParagraph tabBox" style="justify-content: center;" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
 <form style="justify-content: center;">
-  <div class="form-row" style="justify-content: center;">
+  <div class="form-row" data-toggle="validator" role="form" style="justify-content: center;">
         <div class="col-md-6 mb-3">
               <label for="validationServer01">Name</label>
-              <input type="text" class="form-control" id="validationServer01" required>
+              <input type="text" data-minlength="5" class="form-control" name="name" id="validationServer01" required>
+              <div class="help-block with-errors"></div>
               <!-- <div class="valid-feedback">
                 Looks good!
               </div> -->
         </div>
   </div>
 
-  <div class="form-row" style="justify-content: center;">
+  <div id="contact-form" class="form-row" style="justify-content: center;">
         <div class="col-md-6 mb-3">
             <label for="inputEmail3">Email</label> 
-              <input type="email" class="form-control" id="inputEmail3" placeholder="example@mail.com" required>
+              <input type="email" class="form-control" name="email" id="inputEmail3" placeholder="example@mail.com" required data-error="Woops! that email address is invalid">
+              <div class="help-block with-errors"></div>
         </div>
   </div>
 
@@ -221,7 +248,8 @@ a:active{
       <div class="col-md-6 mb-3">
             <div class="mb-3">
                 <label for="validationTextarea">Textarea</label>
-                <textarea class="form-control" id="validationTextarea" placeholder="Message" required></textarea>
+                <textarea data-minlength="5" class="form-control" id="validationTextarea" name="comment" placeholder="Message" required></textarea>
+                <div class="help-block with-errors"></div>
                <!--  <div class="invalid-feedback">
                   Please enter a message in the textarea.
                 </div> -->
@@ -255,23 +283,24 @@ a:active{
 <div  class="container-fluid smallScreen" style="position: absolute; z-index: 10; padding:0; margin:0; display: flex;
 justify-content: space-evenly;">
 <ul class="nav nav-pills mb-3 mt-3"  id="pills-tab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="mdi mdi-space-station"></i></a>
+  <li class="nav-item" role="presentation" style="text-align: center">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="mdi mdi-space-station"></i><span style="font-size:8px; text-align: center; display: block; margin-top: 5px;">HOME</span></a>
   </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="mdi mdi-space-invaders"></i></a>
+  <li class="nav-item" role="presentation" style="text-align: center">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="mdi mdi-currency-usd-circle-outline"></i><span style="font-size:8px; text-align: center; display: block; margin-top: 5px;">ABOUT</span></a>
   </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="pills-crypto-tab" data-toggle="pill" href="#pills-crypto" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="mdi mdi-currency-usd-circle-outline"></i></a>
+  <li class="nav-item" role="presentation" style="text-align: center">
+    <a class="nav-link" id="pills-crypto-tab" data-toggle="pill" href="#pills-crypto" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="mdi mdi-space-invaders"></i><span style="font-size:8px; text-align: center; display: block; margin-top: 5px;">ECOSYSTEM</span></a>
   </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="mdi mdi-transit-connection-horizontal"></i></a>
+  <li class="nav-item" role="presentation" style="text-align: center">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="mdi mdi-transit-connection-horizontal"></i><span style="font-size:8px; text-align: center; display: block; margin-top: 5px;">CONTACT</span></a>
   </li>
 </ul>
-<div class="tab-content" id="pills-tabContent" style="z-index: 10; color: #FFFFFF; position: fixed; margin-top: 75px; margin-left: 10px; margin-right: 10px;">
+<div class="tab-content" id="pills-tabContent" style="z-index: 10; color: #FFFFFF; position: fixed; margin-top: 90px; margin-left: 10px; margin-right: 10px;">
       <div class="tab-pane fade show active" style="background-color: transparent" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><span style="font-family: 'Orbitron', sans-serif; justify-content: center; text-align: center; font-size: 30px; display: block;">ORIONS</span><div style="display: block; font-family: 'Orbitron', sans-serif; text-transform: uppercase; letter-spacing: 3px;">Cryptocurrency economy</div></div>
-      <div class="tab-pane fade smallTabBox" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><h4>ABOUT</h4>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Corrupti, similique consequuntur aut. Officia deserunt minima illum magnam, tempore nam, voluptatum pariatur delectus beatae perspiciatis neque distinctio temporibus fugiat perferendis accusantium.</div>
-      <div class="tab-pane fade smallTabBox" id="pills-crypto" role="tabpanel" aria-labelledby="pills-crypto-tab"><h4>OUR CRYPTOCURRENCY</h4>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Vitae minus consequatur sed, culpa ut vel, quod ipsum mollitia reiciendis natus! Est sit animi commodi sint, ratione consequatur, odit autem dolorem?</div>
+      <div class="tab-pane fade smallTabBox" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><h4>ABOUT</h4>Orions is a cryptocurrency launched on October 21, 2020, while the Orionids could be observed in the sky. Now it works on the Etherum Ropsten network to develop and make test exchanges and once this stage is completed start working on the Etherum ECR-20 network. There is just a single unique mintage of 100,000 orions.<br><br>There are many "shitcoins" designed just to take away your bitcoins, Orions does not have that objective, its objective is simple: to form a select community that exchanges goods and services and add -to its capacity- dynamism to the current resistant trend... just that. Go to the <a href="https://studio.fuse.io/view/community/0x5554e9eed5ec9077FeaA19B878c06Bf624A4b3b5"><span class="fuseLinks">Orions economy page here</span></a>.
+Download the <a href="https://fuse.io/"><span class="fuseLinks">fuse wallet</span></a> and get 100 orions (the first 100 people) and help us generate an alternative economy.</div>
+      <div class="tab-pane fade smallTabBox" id="pills-crypto" role="tabpanel" aria-labelledby="pills-crypto-tab"><h4>OUR CRYPTOCURRENCY</h4>The Fuse.io ecosystem offers a powerful platform that integrates both  cryptocurrencies and fiat currency in one wallet. An innovative quality is the possibility of being able to mint personalized cryptocurrencies and integrate many users to exchange goods and services and generate alternative economies. A very successful recent example case developed in fuse.io is <a href="https://www.gooddollar.org/"><span class="fuseLinks">gooddollar.org</span></a>, just officially launched in September 2020, there is already a world community exchanging goods and services.</div>
       <div class="tab-pane fade smallTabBox" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"><h4>CONTACT</h4>
         <form style="justify-content: center;">
   <div class="form-row" style="justify-content: center;">
@@ -314,8 +343,8 @@ justify-content: space-evenly;">
 
     <div class="d-flex justify-content-center align-items-end bottomBar">
           <div>
-            <span class="text-muted" style="font-size: 12px">SOME CONTENT HERE</span>
-            <a href="https://studio.fuse.io/view/community/0x5554e9eed5ec9077FeaA19B878c06Bf624A4b3b5">GO TO FUSE STUDIO</a>
+            <!-- <span class="text-muted" style="font-size: 12px">SOME CONTENT HERE</span> -->
+            <a href="https://studio.fuse.io/view/community/0x5554e9eed5ec9077FeaA19B878c06Bf624A4b3b5"><img width="63" heigth="14" target="_blank" src="img/fuse-logo.png" alt="fuse.io-fuse-studio"/></a>
          </div>
     </div>
 
@@ -326,5 +355,6 @@ justify-content: space-evenly;">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 </body>
 </html>
